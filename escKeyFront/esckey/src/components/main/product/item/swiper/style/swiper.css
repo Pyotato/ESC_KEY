@@ -1,0 +1,35 @@
+.mySwiper {
+    width: 750px;
+    height: 300px;
+}
+
+.swiper-pagination {
+    bottom: 10px;
+}
+
+.swiper-wrapper {
+    margin-left: 15px;
+}
+
+.swiper .swiper-pagination-bullet {
+    background-color: rgb(255, 255, 255);
+    margin: 0 10px;
+    width: 4.5px;
+    height: 4.5px;
+}
+
+.swiper-pagination-horizontal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper .swiper-pagination-bullet-active {
+    width: 7px;
+    height: 7px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #414141 !important;
+    box-shadow: 0px 0px 0px 1.5px #dedede inset;
+}
