@@ -18,6 +18,9 @@ export const colors = {
   color_gray_2: "#151515",
   color_gray_3: "#525252",
   color_gray_4: "#c7c7c7",
+  color_gray_5: "#D9D9D9",
+  color_brown: "#4f3D38",
+  color_beige_brown: "#E0CFC5",
   color_gray_red: "#796763",
   color_gray_red2: "#A07667",
   color_gray_red3: "#B79686",
@@ -44,6 +47,7 @@ export const fontSizes = {
 };
 
 export const fontWeights = {
+  fontWeight_regular: "400",
   fontWeight_bold: "700",
   fontWeight_bolder: "900",
 };
@@ -58,6 +62,8 @@ export const paddings = {
   padding_ul: calcRem(40),
   padding_uul: calcRem(55),
   padding_uuul: calcRem(70),
+  padding_uuuul: calcRem(120),
+  padding_uuuuul: calcRem(170),
 };
 
 export const margins = {
@@ -70,6 +76,7 @@ export const margins = {
   margin_ul: calcRem(30),
   margin_uul: calcRem(45),
   margin_uuul: calcRem(55),
+  margin_uuuul: calcRem(120),
 };
 
 export const interval = {
@@ -88,7 +95,7 @@ export const deviceSizes = {
   deviceSize_mobileM: "375px",
   deviceSize_mobileL: "450px",
   deviceSize_tablet: "768px",
-  deviceSize_tabletL: "1024px",
+  deviceSizes: "1024px",
 };
 
 export const device = {

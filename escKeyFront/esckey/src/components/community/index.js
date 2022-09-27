@@ -1,11 +1,5 @@
 import styled from "styled-components";
-import {
-  colors,
-  fontSizes,
-  fontWeights,
-  margins,
-  paddings,
-} from "../../theme/theme";
+import {} from "../../theme/theme";
 const CommunityList = () => {
   return (
     <>
