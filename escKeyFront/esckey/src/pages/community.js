@@ -9,19 +9,21 @@ import {
   paddings,
 } from "../theme/theme";
 import CommunityList from "../components/community";
+import CommunityCp from "../components/community";
 
 const CommunityPage = () => {
   return (
     <>
       <Header />
-      <CommunityWrap>
+      <CommunityCp />
+      {/* <CommunityWrap>
         <div>커뮤니티</div>
         <div className="descriptionWrap">
           <div>POPULAR CUSTOM</div>
           <div>게이머들이 추천하는 커스텀 조합입니다.</div>
         </div>
         <CommunityList />
-      </CommunityWrap>
+      </CommunityWrap> */}
 
       <Footer />
     </>

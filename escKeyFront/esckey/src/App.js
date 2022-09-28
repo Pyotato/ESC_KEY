@@ -4,7 +4,6 @@ import MainPage from "./pages/main";
 import { ThemeProvider, useTheme } from "./context/themeProvider.js";
 import CommunityPage from "./pages/community";
 import CustomerSupportPage from "./pages/customer_support";
-import FaqPage from "./pages/faq";
 import CustomizingInstructions from "./pages/customizing_instructions";
 import ChatPage from "./pages/chat";
 
@@ -21,7 +20,8 @@ function App() {
               path="/customizing/instructions"
               element={<CustomizingInstructions />}
             />
-            <Route path="/FAQ" element={<FaqPage />} />
+            {/* <Route path="/FAQ" element={<FaqPage />} /> */}
+            <Route path="/FAQ" element={<CustomizingInstructions />} />
             <Route path="/chat" element={<ChatPage />} />
           </Routes>
         </ThemeProvider>
