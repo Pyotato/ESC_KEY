@@ -1,90 +1,7 @@
-import { useState } from "react";
 import styled from "styled-components";
-import { device, deviceSizes } from "../../../theme/theme";
+import { dummyPost } from "../../../dummydata/post";
 
 const CommunityPost = () => {
-  const [dummyPost, setDummyPost] = useState([
-    {
-      postNo: 1,
-      postTitle: "제목 1",
-      postAuthor: "글쓴이1",
-      postCreateDate: "2022/9/21",
-      postLikes: 0,
-      postViews: 0,
-    },
-    {
-      postNo: 2,
-      postTitle: "제목 2",
-      postAuthor: "글쓴이2",
-      postCreateDate: "2022/9/21",
-      postLikes: 0,
-      postViews: 0,
-    },
-    {
-      postNo: 3,
-      postTitle: "제목 3",
-      postAuthor: "글쓴이3",
-      postCreateDate: "2022/9/21",
-      postLikes: 0,
-      postViews: 0,
-    },
-    {
-      postNo: 4,
-      postTitle: "제목 4",
-      postAuthor: "글쓴이4",
-      postCreateDate: "2022/9/21",
-      postLikes: 0,
-      postViews: 0,
-    },
-    {
-      postNo: 5,
-      postTitle: "제목 5",
-      postAuthor: "글쓴이5",
-      postCreateDate: "2022/9/21",
-      postLikes: 0,
-      postViews: 0,
-    },
-    {
-      postNo: 6,
-      postTitle: "제목 6입니다~~~~~~~~~~~~~",
-      postAuthor: "글쓴이666666666",
-      postCreateDate: "2022/9/21",
-      postLikes: 0,
-      postViews: 0,
-    },
-    {
-      postNo: 7,
-      postTitle: "제목 7입니다~~~~~~~~~~~~~",
-      postAuthor: "글쓴이77",
-      postCreateDate: "2022/9/21",
-      postLikes: 0,
-      postViews: 0,
-    },
-    {
-      postNo: 8,
-      postTitle: "제목 7입니다~~~~~~~~~~~~~",
-      postAuthor: "글쓴이77",
-      postCreateDate: "2022/9/21",
-      postLikes: 0,
-      postViews: 0,
-    },
-    {
-      postNo: 9,
-      postTitle: "제목 9입@@@@@@@@@니다~~~~~~~~~~~~~",
-      postAuthor: "글쓴이9",
-      postCreateDate: "2022/9/21",
-      postLikes: 0,
-      postViews: 0,
-    },
-    {
-      postNo: 10,
-      postTitle: "제목 10입니다~~~~~~@@@@@@@@@~~~~~~~",
-      postAuthor: "글쓴이101010",
-      postCreateDate: "2022/9/21",
-      postLikes: 0,
-      postViews: 0,
-    },
-  ]);
   return (
     <>
       <TotalWrap>
@@ -94,8 +11,8 @@ const CommunityPost = () => {
             <span className="titleWrap">제목</span>
             <span className="titleWrap">글쓴이</span>
             <span className="itemWt">작성일</span>
-            <span>추천</span>
-            <span>조회</span>
+            <span className="itemWt">추천</span>
+            <span className="itemWt">조회</span>
           </div>
 
           {dummyPost.map((v) => (
@@ -118,9 +35,9 @@ const CommunityPost = () => {
                     <>{v.postAuthor.substring(0, 5) + "..."}</>
                   )}
                 </span>
-                <span>{v.postCreateDate}</span>
-                <span>{v.postLikes}</span>
-                <span>{v.postViews}</span>
+                <span className="itemWt">{v.postCreateDate}</span>
+                <span className="itemWt">{v.postLikes}</span>
+                <span className="itemWt">{v.postViews}</span>
               </div>
             </>
           ))}
@@ -143,5 +60,8 @@ const TotalWrap = styled.div`
 
   & .titleWrap {
     width: 12vw;
+  }
+  & .itemWt {
+    width: 6vw;
   }
 `;

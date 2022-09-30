@@ -76,7 +76,8 @@ const CommunityWrap = styled.div`
   /* height: 100vh; */
   height: fit-content;
   text-align: center;
-  padding: 4em;
+  padding: 4em 12em;
+
   & .pageTitle {
     font-weight: ${fontWeights.fontWeight_bolder};
     font-size: ${fontSizes.fontSize_ul};
